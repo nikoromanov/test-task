@@ -1,0 +1,21 @@
+.content {
+  padding: 1rem;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 1.5rem;
+}
+
+.label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}

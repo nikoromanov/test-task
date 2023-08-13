@@ -1,0 +1,17 @@
+.header {
+  height: 3rem;
+  padding-left: 3rem;
+  background-color: #ededed;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.main {
+  padding: 20px 40px;
+}
