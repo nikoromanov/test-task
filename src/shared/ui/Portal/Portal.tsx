@@ -1,4 +1,4 @@
-import { PropsWithChildren, useLayoutEffect, useRef } from "react";
+import React, { PropsWithChildren, useLayoutEffect, useRef } from "react";
 import ReactDOM from "react-dom";
 
 const Portal: React.FC<PropsWithChildren> = ({ children }) => {
