@@ -1,7 +1,8 @@
 export const MY_PROFILE = {
   id: 99,
   name: "John Smith",
-  image: "/images/4.jpg",
+  image:
+    "https://st.depositphotos.com/1224365/2498/i/450/depositphotos_24980235-Portrait-of-a-normal-man-smiling-over-grey-background.jpg",
 };
 
 export const FORBIDDEN_WORD = "1984";

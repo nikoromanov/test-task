@@ -18,7 +18,7 @@ const usersSlice = createSlice({
   reducers: {
     setUser: (
       state,
-      action: PayloadAction<{ id: string; user: IDetailedUser }>
+      action: PayloadAction<{ id: number; user: IDetailedUser }>
     ) => {
       const { id, user } = action.payload;
 
@@ -26,7 +26,7 @@ const usersSlice = createSlice({
     },
     setIsLoading: (
       state,
-      action: PayloadAction<{ id: string; status: boolean }>
+      action: PayloadAction<{ id: number; status: boolean }>
     ) => {
       const { id, status } = action.payload;
 

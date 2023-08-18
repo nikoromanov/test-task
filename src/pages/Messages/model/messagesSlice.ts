@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 import { IMessage, IMessageFilter } from "./types";
-import { IMessagesFilters } from "../../../msw/mocks/messages";
+import { IMessagesFilters } from "../../../mock/mocks/messages";
 import { generateStorageKey } from "../../../shared/lib/utils/generateStorageKey";
 
 export interface MessagesState {

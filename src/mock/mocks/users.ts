@@ -3,9 +3,24 @@ import { IDetailedUser } from "../../pages/User/model/types";
 import { getRandomItemFromArr } from "../helpers";
 
 export const mockUsers = [
-  { id: 1, name: "Paxton Roberts", image: "/images/1.jpg" },
-  { id: 2, name: "Helen Smith", image: "/images/2.webp" },
-  { id: 3, name: "Gunner Nguyen", image: "/images/3.webp" },
+  {
+    id: 1,
+    name: "Paxton Roberts",
+    image:
+      "https://media.gettyimages.com/id/685132245/photo/mature-businessman-smiling-over-white-background.jpg?s=612x612&w=gi&k=20&c=ELBLmT-KQ6vhI5xiWnQcWWw0QJiELKt6STlga4fwRC8=",
+  },
+  {
+    id: 2,
+    name: "Helen Smith",
+    image:
+      "https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg",
+  },
+  {
+    id: 3,
+    name: "Gunner Nguyen",
+    image:
+      "https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg",
+  },
 ];
 
 const addresses = [

@@ -1,7 +1,7 @@
-import axios from "axios";
+import { httpService } from "../../../app/core/httpService";
 
 export const usersApi = {
-  getDetailedUser: (id: string) => {
-    return axios.get(`https://api.com/users/${id}`);
+  getDetailedUser: (id: number) => {
+    return httpService.getUser(id);
   },
 };

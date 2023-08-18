@@ -4,7 +4,7 @@ import { usersApi } from "./api";
 import { usersActions } from "./usersSlice";
 
 export const getUser =
-  (id: string) => (dispatch: Dispatch, getState: () => RootState) => {
+  (id: number) => (dispatch: Dispatch, getState: () => RootState) => {
     if (!getState().users.users[id]) {
       dispatch(usersActions.setIsLoading({ id, status: true }));
     }

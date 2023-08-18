@@ -1,10 +1,10 @@
 import { nanoid } from "@reduxjs/toolkit";
-import { rest, RestRequest } from "msw";
+/* import { rest, RestRequest } from "msw";
 import { FORBIDDEN_WORD, MY_PROFILE } from "../app/constants/constants";
 import { IMessage } from "../pages/Messages/model/types";
-import { sleep } from "./helpers";
-import { mockMessages, mockMessagesFilters } from "./mocks/messages";
-import { mockDetailedUsers, mockUsers } from "./mocks/users";
+import { sleep } from "../mock/helpers";
+import { mockMessages, mockMessagesFilters } from "../mock/mocks/messages";
+import { mockDetailedUsers, mockUsers } from "../mock/mocks/users";
 
 export const handlers = [
   rest.get("https://api.com/messages/", async (req, res, ctx) => {
@@ -27,24 +27,7 @@ export const handlers = [
       ctx.json({ results: slicedData, count: filteredData.length })
     );
   }),
-  rest.post(
-    "https://api.com/messages/",
-    async (req: RestRequest<{ text: string }>, res, ctx) => {
-      const { text } = req.body;
-      const newId = nanoid();
 
-      await sleep();
-
-      if (text === FORBIDDEN_WORD) {
-        return res(
-          ctx.status(400),
-          ctx.json({ error: "Message contain forbiden word" })
-        );
-      }
-
-      return res(ctx.status(200), ctx.json({ id: newId }));
-    }
-  ),
   rest.get("https://api.com/users/:id", async (req, res, ctx) => {
     const { id } = req.params;
 
@@ -64,3 +47,4 @@ export const handlers = [
     return res(ctx.status(200), ctx.json(mockMessagesFilters));
   }),
 ];
+ */

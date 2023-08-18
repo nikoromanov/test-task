@@ -1,18 +1,18 @@
-import axios from "axios";
+import { httpService } from "../../../app/core/httpService";
 import { IMessageFilter } from "./types";
 
 export const messagesApi = {
   getMessages: (offset: number, filter: Partial<IMessageFilter> = {}) => {
-    return axios.get("https://api.com/messages/", {
-      params: { offset, limit: 20, ...filter },
+    return httpService.getMessages({
+      offset,
+      limit: 20,
+      ...filter,
     });
   },
   sendMessage: (text: string) => {
-    return axios.post("https://api.com/messages/", {
-      text,
-    });
+    return httpService.sendMessage(text);
   },
   getFilters: () => {
-    return axios.get("https://api.com/messages/filters/");
+    return httpService.getMessageFilters();
   },
 };

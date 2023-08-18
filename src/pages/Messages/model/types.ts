@@ -10,5 +10,5 @@ export interface IMessage {
 }
 
 export interface IMessageFilter {
-  authorId: number | string;
+  authorId: number;
 }

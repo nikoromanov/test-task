@@ -15,7 +15,7 @@ import { getUser } from "./model/thunks";
 import styles from "./User.module.css";
 
 const User = () => {
-  const { userId } = useParams();
+  const userId = +useParams().userId!;
   const dispatch = useAppDispatch();
   const user = useSelector(userDetailedSelecor)[userId!];
   const isLoading = useSelector(userDetailedIsLoadingSelecor)[userId!];
